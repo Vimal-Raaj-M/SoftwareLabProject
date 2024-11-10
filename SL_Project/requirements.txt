@@ -1,8 +1,0 @@
-Flask
-Flask-SQLAlchemy
-Flask-CORS
-Flask-Marshmallow 
-marshmallow-sqlalchemy
-beautifulsoup4 
-selenium 
-python-dateutil
