@@ -1,0 +1,46 @@
+{
+    "kind": "calendar#event",
+    "etag": "\"3462558074114000\"",
+    "id": "nev2bjnvvfqkorohebbp285h84",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=bmV2MmJqbnZ2ZnFrb3JvaGViYnAyODVoODQgdmltYWxyYWFqMzJAbQ",
+    "created": "2024-11-10T22:50:37.000Z",
+    "updated": "2024-11-10T22:50:37.057Z",
+    "summary": "sdfdsvds",
+    "description": "bfkdsjnfdskns",
+    "location": "dscsdvcdsv",
+    "creator": {
+        "email": "vimalraaj32@gmail.com",
+        "self": true
+    },
+    "organizer": {
+        "email": "vimalraaj32@gmail.com",
+        "self": true
+    },
+    "start": {
+        "dateTime": "2024-11-18T15:40:00Z",
+        "timeZone": "Asia/Kolkata"
+    },
+    "end": {
+        "dateTime": "2024-11-19T16:50:00Z",
+        "timeZone": "Asia/Kolkata"
+    },
+    "iCalUID": "nev2bjnvvfqkorohebbp285h84@google.com",
+    "sequence": 0,
+    "attendees": [
+        {
+            "email": "test@example.com",
+            "responseStatus": "needsAction"
+        }
+    ],
+    "reminders": {
+        "useDefault": false,
+        "overrides": [
+            {
+                "method": "popup",
+                "minutes": 10
+            }
+        ]
+    },
+    "eventType": "default"
+}
