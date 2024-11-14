@@ -23,7 +23,7 @@ def populate_my_events():
         Users_Events_Map.event_id == Private_Events.event_id
     ).filter(
         Users_Events_Map.event_type == 'Private', 
-        Users_Events_Map.user_id == Private_Events.userls_id,  
+        Users_Events_Map.user_id == Private_Events.users_id,  
     ).all()
     print(private_events)
     
