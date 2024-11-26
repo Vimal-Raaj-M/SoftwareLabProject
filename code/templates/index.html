@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>College Events</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container nav-container">
+            <span class="nav-title">College Events Hub</span>
+            <div class="nav-actions">
+                <div class="nav-search">
+                    <input type="text" id="searchInput" placeholder="Search events..." onkeypress="handleSearchKeyPress(event)">
+                    <button id="searchButton" onclick="performSearch()">Search</button>
+                </div>
+                <div class="nav-buttons">
+                    <a href="javascript:void(0)" onclick="openModal('myEvents')" class="btn btn-primary">My Events</a>
+                    <a href="{{ url_for('other_routes.create_event') }}" class="btn btn-success">Create Event</a>  
+                    <a href="{{ url_for('logout') }}" class="btn btn-close">Log out</a>                    
+                </div>
+                <div class="profile-container">
+                    <img src="{{ session_profile['picture'] }}" alt="Profile Picture" class="profile-pic">
+                    <div class="profile-tooltip">
+                        <p><strong>Name:</strong> {{ session_profile['name'] }}</p>
+                        <p><strong>Email:</strong> {{ session_profile['email'] }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="category-grid">
+            {% for category in categories %}
+            <div class="category-card" id="{{ category }}" onclick="openModal('category', '{{ category }}')">
+                <h3 class="card-title">{{ category | capitalize }}</h3>
+                <div class="popular-events">
+                    <h6>Popular Events:</h6>
+                    <ul class="list-unstyled">
+                    </ul>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="modal" id="eventsModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitle"></h5>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Modals will be dynamically loaded here based on selection -->
+            </div>
+        </div>
+    </div>
+
+    <script src="static/js/scripts.js"></script>
+</body>
+</html>

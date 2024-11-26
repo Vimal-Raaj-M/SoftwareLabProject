@@ -1,0 +1,40 @@
+{
+    "kind": "calendar#event",
+    "etag": "\"3465105432058000\"",
+    "id": "5achcs5ios4m89dpnvqjnu1hr8",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=NWFjaGNzNWlvczRtODlkcG52cWpudTFocjggc2Fpc3Jpa2FyNTE0QG0",
+    "created": "2024-11-25T16:38:36.000Z",
+    "updated": "2024-11-25T16:38:36.029Z",
+    "summary": "Invitation : Seminar on \"Quantum Technologies\"",
+    "description": "\"rchandwani36\" <rchandwani36@gmail.com>, \"abhishek\" \n<abhishek@zeusnumerix.com>, \"kvkuber\" <kvkuber@gmail.com>",
+    "location": "Research and Innovation Park - IIT Delhi",
+    "creator": {
+        "email": "saisrikar514@gmail.com",
+        "self": true
+    },
+    "organizer": {
+        "email": "saisrikar514@gmail.com",
+        "self": true
+    },
+    "start": {
+        "dateTime": "2024-11-27T00:00:00+05:30",
+        "timeZone": "Asia/Kolkata"
+    },
+    "end": {
+        "dateTime": "2024-11-27T02:00:00+05:30",
+        "timeZone": "Asia/Kolkata"
+    },
+    "iCalUID": "5achcs5ios4m89dpnvqjnu1hr8@google.com",
+    "sequence": 0,
+    "reminders": {
+        "useDefault": false,
+        "overrides": [
+            {
+                "method": "popup",
+                "minutes": 10
+            }
+        ]
+    },
+    "eventType": "default"
+}
